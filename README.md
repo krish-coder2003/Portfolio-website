@@ -1,70 +1,95 @@
-# Getting Started with Create React App
+# 🌐 Personal Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive **personal portfolio website** built with **React.js**, showcasing my projects, skills, experience, and contact information.  
+Designed with a **clean UI, smooth animations, and dark mode support** to create a strong professional developer presence.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 👤 About Me
 
-### `npm start`
+Hi, I’m **Krishna Shrangare**, a passionate **Full Stack Web Developer** who enjoys building scalable, user-friendly, and performance-driven web applications.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This portfolio represents my technical skills, real-world projects, and continuous learning journey in web development.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 🌗 Dark / Light Mode Toggle  
+- 🎯 Hero Section with Typewriter Effect  
+- ⭐ Featured Project Highlight  
+- 🧩 Projects Showcase  
+- 🛠 Skills Section with Icons  
+- ✨ Scroll-based Animations (Intersection Observer)  
+- 📱 Fully Responsive Design  
+- 📩 Working Contact Form  
+- 🔗 GitHub, LinkedIn & Email Integration  
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠 Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Frontend
+- React.js  
+- JavaScript (ES6+)  
+- HTML5  
+- CSS3  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Libraries & Tools
+- react-icons  
+- react-simple-typewriter  
+- Intersection Observer API  
+- Git & GitHub  
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📂 Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+portfolio/
+├── public/
+│ ├── index.html
+│ ├── krishna_shrangare.pdf
+│ └── assets/
+├── src/
+│ ├── components/
+│ │ ├── HeroSection
+│ │ ├── AboutSection
+│ │ ├── FeaturedProject
+│ │ ├── ProjectsSection
+│ │ ├── SkillsSection
+│ │ ├── ExperienceSection
+│ │ ├── ContactSection
+│ │ ├── Navbar
+│ │ └── Footer
+│ ├── App.js
+│ ├── index.js
+│ └── App.css
+├── package.json
+└── README.md
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## ▶️ Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Clone the repository and run the project locally:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git clone https://github.com/krish-coder2003/Portfolio-website.git
+cd Portfolio-website
+npm install
+npm start
 
-### Code Splitting
+The app will run on:
+http://localhost:3000
+ (or next available port)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🔗 Connect With Me
 
-### Analyzing the Bundle Size
+GitHub: https://github.com/krish-coder2003
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+LinkedIn: https://www.linkedin.com/in/krishna-shrangare-684952237/
 
-### Making a Progressive Web App
+Email: krishnashrangare@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+⭐ If you like this project, please consider starring the repository!
