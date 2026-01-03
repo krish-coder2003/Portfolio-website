@@ -1,0 +1,43 @@
+.experience {
+  background: var(--bg);
+  padding: 100px 20px;
+}
+
+.experience-wrapper {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.experience-wrapper.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline {
+  margin-top: 40px;
+}
+
+.timeline-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 18px;
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.06);
+}
+
+.timeline-item h3 {
+  margin-bottom: 4px;
+  color: var(--text);
+}
+
+.timeline-item span {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.timeline-item p {
+  margin-top: 10px;
+  color: var(--muted);
+}

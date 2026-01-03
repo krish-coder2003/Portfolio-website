@@ -1,0 +1,92 @@
+/* =========================
+   ABOUT SECTION
+========================= */
+.about {
+  background: var(--bg);
+  padding: 100px 20px;
+}
+
+.about-wrapper {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.about-wrapper.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* =========================
+   GRID
+========================= */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+/* =========================
+   TEXT
+========================= */
+.about-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+
+.about-text strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* =========================
+   STATS
+========================= */
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.stat-card {
+  background: var(--card);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  padding: 26px;
+  text-align: center;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 26px 60px rgba(15, 23, 42, 0.15);
+}
+
+.stat-card h3 {
+  font-size: 1.6rem;
+  color: #2563eb;
+  margin-bottom: 6px;
+}
+
+.stat-card p {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* Dark mode */
+body.dark .stat-card h3 {
+  color: #38bdf8;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,97 @@
+.featured {
+  background: linear-gradient(180deg, #f8fafc, #ffffff);
+  padding: 100px 20px;
+}
+
+.featured-wrapper {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.featured-wrapper.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.featured-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.featured-grid {
+  margin-top: 30px;
+}
+
+.featured-content p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.featured-points li {
+  margin-bottom: 10px;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.featured-tech span {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.1);
+  color: #2563eb;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+/* =========================
+   FEATURED PROJECT – DARK MODE FIX
+========================= */
+
+body.dark .featured {
+  background: #020617;
+}
+
+/* LABEL */
+body.dark .featured-label {
+  background: rgba(56, 189, 248, 0.18);
+  color: #38bdf8;
+}
+
+/* TITLES */
+body.dark .featured .section-title {
+  color: #f8fafc;
+}
+
+body.dark .featured .section-subtitle {
+  color: #cbd5e1;
+}
+
+/* PARAGRAPH */
+body.dark .featured-content p {
+  color: #94a3b8;
+}
+
+/* LIST ITEMS */
+body.dark .featured-points li {
+  color: #cbd5e1;
+}
+
+/* TECH STACK */
+body.dark .featured-tech span {
+  background: rgba(56, 189, 248, 0.18);
+  color: #38bdf8;
+}
+
+/* BUTTON */
+body.dark .featured .btn.primary {
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: #020617;
+}

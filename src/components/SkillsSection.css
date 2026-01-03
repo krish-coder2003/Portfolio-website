@@ -1,0 +1,143 @@
+/* =========================
+   SKILLS SECTION
+========================= */
+.skills {
+  background: var(--bg);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 60px;
+  font-size: 1.05rem;
+}
+
+/* =========================
+   GRID
+========================= */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+/* =========================
+   SKILL GROUP CARD
+========================= */
+.skill-group {
+  background: var(--card);
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  padding: 26px;
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.06);
+
+  /* animation initial */
+  opacity: 0;
+  transform: translateY(40px) scale(0.96);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease,
+    box-shadow 0.3s ease;
+}
+
+.skill-group.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.skill-group:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 26px 60px rgba(15, 23, 42, 0.15);
+}
+
+/* =========================
+   TITLE
+========================= */
+.skill-group h3 {
+  font-size: 1.1rem;
+  margin-bottom: 14px;
+  color: var(--text);
+}
+
+/* =========================
+   PILLS
+========================= */
+.skill-pills span {
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.1);
+  color: #2563eb;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.skill-group:hover .skill-pills span {
+  transform: translateY(-2px);
+}
+
+/* dark mode */
+body.dark .skill-pills span {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* =========================
+   SKILL GROUP HEADER
+========================= */
+.skill-group-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.skill-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: rgba(37, 99, 235, 0.12);
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+/* Dark mode icon */
+body.dark .skill-icon {
+  background: rgba(56, 189, 248, 0.18);
+  color: #38bdf8;
+}
+
+/* =========================
+   DARK MODE FIX (IMPORTANT)
+========================= */
+body.dark .skill-group {
+  background: #020617;
+  border-color: #1e293b;
+}
+
+body.dark .skill-group h3 {
+  color: #f8fafc;
+}

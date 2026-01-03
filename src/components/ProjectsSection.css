@@ -1,0 +1,165 @@
+/* =========================
+   PROJECTS SECTION
+========================= */
+.projects {
+  background: var(--bg);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+  color: var(--text);
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--muted);
+  margin-bottom: 60px;
+  font-size: 1rem;
+}
+
+/* =========================
+   GRID
+========================= */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+/* =========================
+   CARD (BASE)
+========================= */
+.project-card {
+  background: var(--card);
+  border-radius: 18px;
+  border: 1px solid var(--border);
+  padding: 26px;
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.06);
+
+  /* animation initial state */
+  opacity: 0;
+  transform: translateY(40px) scale(0.96);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease,
+    box-shadow 0.3s ease;
+}
+
+/* when visible */
+.project-card.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* hover interaction */
+.project-card:hover {
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.18);
+}
+
+/* =========================
+   HEADER TAG
+========================= */
+.project-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 14px;
+}
+
+.project-tag {
+  font-size: 0.7rem;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.12);
+  color: #2563eb;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+/* =========================
+   BODY
+========================= */
+.project-body h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.project-body p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 18px;
+}
+
+/* =========================
+   TECH PILLS
+========================= */
+.tech {
+  margin-bottom: 20px;
+}
+
+.tech-pill {
+  display: inline-block;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 6px 12px;
+  background: rgba(37, 99, 235, 0.1);
+  border-radius: 999px;
+  color: #2563eb;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover .tech-pill {
+  transform: translateY(-2px);
+}
+
+/* dark mode */
+body.dark .tech-pill,
+body.dark .project-tag {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+}
+
+/* =========================
+   ACTIONS
+========================= */
+.project-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.btn.small {
+  padding: 9px 16px;
+  font-size: 0.85rem;
+  border-radius: 12px;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #2563eb, #4f46e5);
+  color: #fff;
+}
+
+.btn.ghost {
+  background: #f1f5f9;
+  color: #2563eb;
+}
+
+body.dark .btn.ghost {
+  background: rgba(99, 102, 241, 0.15);
+  color: #c7d2fe;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
