@@ -25,7 +25,7 @@ export default function ResumeSection() {
 
           <div className="resume-actions">
             <a
-              href="/krishna_shrangare.pdf"
+              href="/krishna shrangare Fresher.pdf"
               className="btn primary"
               target="_blank"
               rel="noreferrer"
@@ -33,7 +33,7 @@ export default function ResumeSection() {
               View Resume
             </a>
             <a
-              href="/krishna_shrangare.pdf"
+              href="/krishna shrangare Fresher.pdf"
               className="btn secondary"
               download
             >
